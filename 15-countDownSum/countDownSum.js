@@ -1,6 +1,19 @@
-class MySolution {
-  countDownSum(num) {
-    // Insert code here;
+class MySolution 
+{
+  countDownSum(num) 
+  {
+    
+    if (num == 1)
+    {  
+      return 1;    
+    } 
+    
+    else if(num !== 0) 
+    {      
+        return (num + this.countDownSum(num-1));       
+    } 
+      
+  // Insert code here;
   }
 }
 
